@@ -1,0 +1,83 @@
+/* Forno di Prova - solo CSS, nessuna risorsa esterna */
+:root {
+  --fondo: #fbf5ea;
+  --testo: #2b1d12;
+  --accento: #8a4b17;
+  --accento-scuro: #5e300b;
+  --riga: #e3d3b8;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.125rem; /* 18px: leggibile senza zoom */
+  line-height: 1.6;
+  color: var(--testo);
+  background: var(--fondo);
+  padding-bottom: 5.5rem; /* spazio per il menu in basso */
+}
+header { background: var(--accento-scuro); color: #fff; padding: 1rem; }
+header .marchio { font-size: 1.5rem; font-weight: bold; margin: 0; }
+main { max-width: 40rem; margin: 0 auto; padding: 1.25rem 1rem; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 1rem; }
+h2 { font-size: 1.4rem; margin: 1.75rem 0 .5rem; color: var(--accento-scuro); }
+p { margin: 0 0 1rem; }
+.segnaposto {
+  background: #fff3a8;
+  color: #000;
+  border: 2px dashed #b38600;
+  padding: 0 .3em;
+  border-radius: 4px;
+  font-weight: bold;
+}
+ul.lista { list-style: none; padding: 0; margin: 0 0 1rem; }
+ul.lista li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .75rem 0;
+  border-bottom: 1px solid var(--riga);
+}
+table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+th, td { text-align: left; padding: .65rem .25rem; border-bottom: 1px solid var(--riga); font-weight: normal; }
+td:last-child { text-align: right; }
+.bottone {
+  display: block;
+  text-align: center;
+  background: var(--accento);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem;
+  min-height: 3.5rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+/* Menu fisso in basso: raggiungibile col pollice */
+nav {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  display: flex;
+  background: var(--accento-scuro);
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 10;
+}
+nav a {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem .25rem;
+  min-height: 3.5rem; /* bersaglio di tocco grande */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav a[aria-current="page"] { background: var(--accento); font-weight: bold; }
+nav a:focus-visible, .bottone:focus-visible { outline: 3px solid #fff3a8; outline-offset: -3px; }
+@media (min-width: 48rem) {
+  body { font-size: 1.25rem; }
+}
