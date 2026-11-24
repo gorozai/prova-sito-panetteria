@@ -1,4 +1,8 @@
 /* Forno Pietrafina — attività inventata per una prova di Goroz AI */
+/* Font ospitati nel sito: Fraunces e Inter, SIL Open Font License 1.1 (font/LICENZE.txt) */
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 500 600; font-display: swap; src: url("font/fraunces.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 500; font-display: swap; src: url("font/fraunces-italic.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("font/inter.woff2") format("woff2"); }
 :root {
   --carta: #f7f2ea;
   --carta-2: #efe6d8;

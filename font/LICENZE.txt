@@ -1,0 +1,10 @@
+Font inclusi in questo sito di prova
+
+Fraunces (fraunces.woff2, fraunces-italic.woff2)
+  Copyright 2020 The Fraunces Project Authors (https://github.com/undercasetype/Fraunces)
+Inter (inter.woff2)
+  Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)
+
+Entrambi sono distribuiti con la SIL Open Font License, versione 1.1:
+https://openfontlicense.org
+File scaricati da Google Fonts (sottoinsieme latino) il 24/11/2026.
