@@ -9,6 +9,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231e3a2b'/%3E%3Ccircle cx='50' cy='50' r='34' fill='none' stroke='%23f2c14e' stroke-width='7'/%3E%3Ccircle cx='50' cy='50' r='7' fill='%23f2c14e'/%3E%3C/svg%3E">
 <link rel="preload" href="font/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="stile.css">
+<script src="movimento.js" defer></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -43,8 +44,8 @@
       <figure><img src="img/pane-480.webp" srcset="img/pane-480.webp 480w, img/pane-900.webp 900w" sizes="(min-width: 56rem) 34vw, 100vw" width="900" height="1129" fetchpriority="high" alt="Pagnotta a lievito madre con la crosta scura incisa, dall'alto su carta gialla"></figure>
       <div>
         <p class="etichetta">01 · Pane</p>
-        <h2 id="pane">Pane a <em>lievito madre</em></h2>
-        <ul class="voci">
+        <h2 id="pane" data-parole>Pane a <em>lievito madre</em></h2>
+        <ul class="voci" data-rivela>
           <li><b>Pagnotta di campagna</b><span class="prezzo">€ 6,80/kg</span><small>Tipo 1 e integrale, crosta scura, si conserva tre giorni.</small></li>
           <li><b>Filone ai grani antichi</b><span class="prezzo">€ 7,90/kg</span><small>Senatore Cappelli e Gentil Rosso, profumo di nocciola.</small></li>
           <li><b>Segale e noci</b><span class="prezzo">€ 8,50/kg</span><small>Denso e aromatico, perfetto con i formaggi stagionati.</small></li>
@@ -56,11 +57,11 @@
 
   <section class="reparto mattone inverti" aria-labelledby="focacce">
     <div class="contenitore">
-      <figure><img src="img/focaccia-480.webp" srcset="img/focaccia-480.webp 480w, img/focaccia-900.webp 900w" sizes="(min-width: 56rem) 34vw, 100vw" width="900" height="1129" loading="lazy" alt="Focaccia all'olio con sale grosso e rosmarino, con un angolo strappato, su carta rosso mattone"></figure>
+      <figure data-maschera><img src="img/focaccia-480.webp" srcset="img/focaccia-480.webp 480w, img/focaccia-900.webp 900w" sizes="(min-width: 56rem) 34vw, 100vw" width="900" height="1129" loading="lazy" alt="Focaccia all'olio con sale grosso e rosmarino, con un angolo strappato, su carta rosso mattone"></figure>
       <div>
         <p class="etichetta">02 · Teglia</p>
-        <h2 id="focacce">Focacce e <em>pizze</em></h2>
-        <ul class="voci">
+        <h2 id="focacce" data-parole>Focacce e <em>pizze</em></h2>
+        <ul class="voci" data-rivela>
           <li><b>Focaccia all'olio</b><span class="prezzo">€ 2,50</span><small>Il trancio classico, con olio extravergine e sale grosso.</small></li>
           <li><b>Focaccia con cipolle</b><span class="prezzo">€ 2,80</span><small>Cipolla rossa stufata piano, finché diventa dolce.</small></li>
           <li><b>Pizza rossa in teglia</b><span class="prezzo">€ 2,30</span><small>Pomodoro, origano e un filo d'olio. Esce alle 11 e alle 17.</small></li>
@@ -72,11 +73,11 @@
 
   <section class="reparto" aria-labelledby="colazione">
     <div class="contenitore">
-      <figure><img src="img/cornetti-480.webp" srcset="img/cornetti-480.webp 480w, img/cornetti-900.webp 900w" sizes="(min-width: 56rem) 34vw, 100vw" width="900" height="1129" loading="lazy" alt="Tre cornetti sfogliati e un maritozzo con la panna, dall'alto su carta da forno"></figure>
+      <figure data-maschera><img src="img/cornetti-480.webp" srcset="img/cornetti-480.webp 480w, img/cornetti-900.webp 900w" sizes="(min-width: 56rem) 34vw, 100vw" width="900" height="1129" loading="lazy" alt="Tre cornetti sfogliati e un maritozzo con la panna, dall'alto su carta da forno"></figure>
       <div>
         <p class="etichetta">03 · Mattina</p>
-        <h2 id="colazione">Colazione e <em>dolci</em></h2>
-        <ul class="voci">
+        <h2 id="colazione" data-parole>Colazione e <em>dolci</em></h2>
+        <ul class="voci" data-rivela>
           <li><b>Cornetto sfogliato</b><span class="prezzo">€ 1,60</span><small>Burro, sfogliatura a mano, tre giorni di lavorazione.</small></li>
           <li><b>Maritozzo con la panna</b><span class="prezzo">€ 3,20</span><small>Panna montata al momento, solo fino a esaurimento.</small></li>
           <li><b>Ciambellone della casa</b><span class="prezzo">€ 14,00</span><small>Al limone, intero. Le fette al banco a € 2,50.</small></li>
@@ -90,7 +91,7 @@
     <div class="contenitore">
       <div>
         <p class="etichetta" style="color:var(--grano)">Su ordinazione</p>
-        <h2 id="ordini">Ti teniamo da parte <em>il pane.</em></h2>
+        <h2 id="ordini" data-parole>Ti teniamo da parte <em>il pane.</em></h2>
         <p>Ordina entro le 18 e lo trovi pronto la mattina dopo, con il tuo nome sul sacchetto.</p>
       </div>
       <a class="bottone giallo" href="orari-e-contatti.html#ordina">Prenota per domani <span class="freccia" aria-hidden="true">→</span></a>
