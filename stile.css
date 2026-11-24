@@ -129,7 +129,7 @@ h3 { font-size: 1.5rem; }
   .marchio span { letter-spacing: .12em; white-space: nowrap; }
   .fatti ul { grid-template-columns: repeat(3, 1fr); }
   .fatti li { padding: 1.25rem .5rem; }
-  .fatti strong { font-size: 1.5rem; }
+  .fatti strong { font-size: clamp(1.15rem, 5.4vw, 1.5rem); white-space: nowrap; }
   .fatti span { font-size: .8rem; line-height: 1.4; display: block; }
   .apertura .azioni .bottone { flex: 1 1 auto; justify-content: center; }
 }
