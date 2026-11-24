@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#1e3a2b">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231e3a2b'/%3E%3Ccircle cx='50' cy='50' r='34' fill='none' stroke='%23f2c14e' stroke-width='7'/%3E%3Ccircle cx='50' cy='50' r='7' fill='%23f2c14e'/%3E%3C/svg%3E">
 <link rel="preload" href="font/bricolage.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="img/hero-800.webp" imagesrcset="img/hero-800.webp 800w, img/hero-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" href="img/pane-480.webp" imagesrcset="img/pane-480.webp 480w, img/pane-900.webp 900w" imagesizes="(min-width: 56rem) 24vw, 30vw" fetchpriority="high">
 <link rel="stylesheet" href="stile.css">
 </head>
 <body>
@@ -30,16 +30,26 @@
 
 <main id="contenuto">
   <section class="apertura" aria-labelledby="titolo">
-    <picture><img src="img/hero-800.webp" srcset="img/hero-800.webp 800w, img/hero-1600.webp 1600w" sizes="100vw" width="1600" height="873" alt="Un fornaio di spalle inforna le pagnotte nel forno a legna, all'alba, con la luce blu della strada dalla finestra" fetchpriority="high"></picture>
-    <div class="timbro" aria-hidden="true">
-      <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="97" fill="#f2c14e" stroke="#1a1612" stroke-width="3"/><g class="giro"><path id="giro-home" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0" fill="none"/><text font-family="Plex Mono, monospace" font-size="13" font-weight="500" fill="#1a1612"><textPath href="#giro-home" textLength="448" lengthAdjust="spacing">MACINATO A PIETRA · LIEVITO MADRE · CITTÀ DI PROVA ·</textPath></text></g><svg x="66" y="66" width="68" height="68" style="color:#1a1612"><use href="#macina"/></svg></svg>
-    </div>
-    <div class="sopra contenitore">
-      <p class="etichetta">Forno di quartiere · dal lunedì al sabato</p>
-      <h1 id="titolo">Pane vero, <em>all'alba.</em></h1>
-      <div class="sotto">
-        <p>Lievito madre, farine macinate a pietra e un forno che si accende quando la città dorme ancora.</p>
-        <a class="bottone giallo" href="prodotti.html">Guarda il banco <span class="freccia" aria-hidden="true">→</span></a>
+    <div class="contenitore">
+      <div class="riga-alta">
+        <p class="etichetta">Forno di quartiere · Città di Prova</p>
+        <p class="etichetta">Prima sfornata, ogni mattina</p>
+      </div>
+      <p class="orologio" role="img" aria-label="Prima sfornata alle 6:30">
+        <span class="cifra" aria-hidden="true">6</span>
+        <span class="macina-foto" aria-hidden="true">
+          <img src="img/pane-480.webp" srcset="img/pane-480.webp 480w, img/pane-900.webp 900w" sizes="(min-width: 56rem) 24vw, 30vw" width="900" height="1129" alt="" fetchpriority="high">
+          <svg class="anello" viewBox="0 0 200 200"><path id="giro-home" d="M100,100 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0" fill="none"/><circle cx="100" cy="100" r="99" fill="none" stroke="#1e3a2b" stroke-width="2"/><circle cx="100" cy="100" r="73" fill="none" stroke="#1e3a2b" stroke-width="2"/><text font-family="Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing="2.6" fill="#1e3a2b"><textPath href="#giro-home">MACINATO A PIETRA · LIEVITO MADRE · SFORNATO ALL'ALBA · </textPath></text></svg>
+          <i class="punti"></i>
+        </span>
+        <span class="cifra" aria-hidden="true">30</span>
+      </p>
+      <div class="base">
+        <h1 id="titolo">Pane vero, <em>all'alba.</em></h1>
+        <div class="sotto">
+          <p>Lievito madre, farine macinate a pietra e un forno che si accende quando la città dorme ancora.</p>
+          <a class="bottone" href="prodotti.html">Guarda il banco <span class="freccia" aria-hidden="true">→</span></a>
+        </div>
       </div>
     </div>
   </section>
@@ -58,7 +68,7 @@
         <h2 id="metodo">Acqua, farina, sale e <em>quarantotto ore</em> di pazienza.</h2>
       </div>
       <div class="testo">
-        <p class="ora">6:30<small>la prima sfornata, ogni mattina</small></p>
+        <img class="forno" src="img/hero-800.webp" srcset="img/hero-800.webp 800w, img/hero-1600.webp 1600w" sizes="(min-width: 56rem) 36vw, 100vw" width="1600" height="873" loading="lazy" alt="Un fornaio di spalle inforna le pagnotte nel forno a legna, all'alba, con la luce blu della strada dalla finestra">
         <p>Il grano arriva intero e lo macina una pietra, piano, senza scaldarlo. Poi il lievito madre fa il resto, mentre noi aspettiamo. Zero additivi: se non lo puoi pronunciare, non entra nell'impasto.</p>
       </div>
     </div>
