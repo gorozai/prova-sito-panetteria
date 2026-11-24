@@ -3,37 +3,73 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Forno di Prova - Orari e contatti</title>
+<title>Orari e contatti · Forno Pietrafina</title>
+<meta name="description" content="Orari di apertura, indirizzo e ordini del Forno Pietrafina. Attività inventata per una prova di Goroz AI.">
+<meta name="theme-color" content="#f7f2ea">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23211912'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='36' text-anchor='middle' fill='%23f7f2ea'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="stile.css">
 </head>
 <body>
-<header><p class="marchio">Forno di Prova</p></header>
-<main>
-  <h1>Orari e contatti</h1>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="index.html">Pietrafina<span>Forno a lievito madre</span></a>
+    <nav class="menu" aria-label="Menu principale">
+      <a href="prodotti.html">Prodotti</a>
+      <a class="nascondi" href="orari-e-contatti.html" aria-current="page">Orari</a>
+      <a class="azione" href="#ordina">Ordina</a>
+    </nav>
+  </div>
+</header>
 
-  <h2>Orari</h2>
-  <table>
-    <tr><th scope="row">Lunedì</th><td class="segnaposto">[ORARIO]</td></tr>
-    <tr><th scope="row">Martedì</th><td class="segnaposto">[ORARIO]</td></tr>
-    <tr><th scope="row">Mercoledì</th><td class="segnaposto">[ORARIO]</td></tr>
-    <tr><th scope="row">Giovedì</th><td class="segnaposto">[ORARIO]</td></tr>
-    <tr><th scope="row">Venerdì</th><td class="segnaposto">[ORARIO]</td></tr>
-    <tr><th scope="row">Sabato</th><td class="segnaposto">[ORARIO]</td></tr>
-  </table>
-  <p>Domenica: <span class="segnaposto">[DA CONFERMARE: chiuso?]</span></p>
+<main id="contenuto">
+  <section class="apertura">
+    <div class="contenitore">
+      <div>
+        <p class="occhiello">Vieni a trovarci</p>
+        <h1>Orari e <em>contatti</em></h1>
+        <p class="intro">Il profumo arriva fino all'angolo della strada: è difficile sbagliarsi.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Indirizzo</h2>
-  <p><span class="segnaposto">[INDIRIZZO: via, numero, CAP, città]</span></p>
-
-  <h2>Telefono</h2>
-  <!-- Sostituire il numero in href e nel testo con quello reale, es. tel:+39XXXXXXXXXX -->
-  <a class="bottone" href="tel:+390000000000">Chiama: <span class="segnaposto">[NUMERO DI TELEFONO]</span></a>
-  <p><small>Il numero nel collegamento è un segnaposto (+39 0000000000): va sostituito.</small></p>
+  <section class="sezione visita" style="padding-top:0" aria-label="Orari e indirizzo">
+    <div class="contenitore">
+      <div>
+        <h2>Orari</h2>
+        <table class="orari">
+          <caption class="salta">Orari di apertura settimanali</caption>
+          <tr><th scope="row">Lunedì</th><td>7:00 – 13:30</td></tr>
+          <tr><th scope="row">Martedì – Venerdì</th><td>7:00 – 13:30 · 16:30 – 19:30</td></tr>
+          <tr><th scope="row">Sabato</th><td>7:00 – 19:30</td></tr>
+          <tr class="chiuso"><th scope="row">Domenica</th><td>8:00 – 12:30</td></tr>
+        </table>
+      </div>
+      <div class="riquadro" id="ordina">
+        <p class="occhiello">Dove siamo</p>
+        <h2>Via della Farina 1</h2>
+        <address>Città di Prova<br>Indirizzo inventato per la prova</address>
+        <h3>Ordina per domani</h3>
+        <p>Scrivici entro le 18 cosa ti serve: lo trovi pronto dalle 7, con il tuo nome sul sacchetto.</p>
+        <a class="bottone" href="mailto:ordini@example.com?subject=Ordine%20per%20domani">ordini@example.com</a>
+      </div>
+    </div>
+  </section>
 </main>
-<nav aria-label="Menu principale">
-  <a href="index.html">Home</a>
-  <a href="prodotti.html">Prodotti</a>
-  <a href="orari-e-contatti.html" aria-current="page">Orari e contatti</a>
-</nav>
+
+<footer class="piede">
+  <div class="contenitore">
+    <a class="marchio" href="index.html">Pietrafina<span>Forno a lievito madre</span></a>
+    <nav aria-label="Menu del piè di pagina">
+      <a href="index.html">Home</a>
+      <a href="prodotti.html">Prodotti</a>
+      <a href="orari-e-contatti.html">Orari e contatti</a>
+    </nav>
+    <p class="nota">Attività inventata per una prova di Goroz AI: nomi, prezzi e indirizzo non sono reali. Foto generate con l'intelligenza artificiale.</p>
+  </div>
+</footer>
 </body>
 </html>

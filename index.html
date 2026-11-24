@@ -3,22 +3,119 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Forno di Prova - Home</title>
+<title>Forno Pietrafina · Pane a lievito madre, cotto ogni mattina</title>
+<meta name="description" content="Forno Pietrafina: pane a lievito madre, focaccia e dolci da colazione sfornati ogni mattina. Attività inventata per una prova di Goroz AI.">
+<meta name="theme-color" content="#f7f2ea">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23211912'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='36' text-anchor='middle' fill='%23f7f2ea'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap">
+<link rel="preload" as="image" href="img/hero-800.webp" imagesrcset="img/hero-800.webp 800w, img/hero-1600.webp 1600w" imagesizes="(min-width: 56rem) 55vw, 100vw" fetchpriority="high">
 <link rel="stylesheet" href="stile.css">
 </head>
 <body>
-<header><p class="marchio">Forno di Prova</p></header>
-<main>
-  <h1>Forno di Prova</h1>
-  <p>Siamo una panetteria di quartiere: impastiamo, lievitiamo e sforniamo ogni giorno pane, focacce e dolci. <span class="segnaposto">[DA CONFERMARE: frase "chi siamo" reale, es. anno di apertura, famiglia, farine usate]</span></p>
-  <p>Novità di oggi: <span class="segnaposto">[DA CONFERMARE: prodotto del giorno]</span></p>
-  <a class="bottone" href="prodotti.html">Guarda i prodotti</a>
-  <a class="bottone" href="orari-e-contatti.html">Orari e contatti</a>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="index.html">Pietrafina<span>Forno a lievito madre</span></a>
+    <nav class="menu" aria-label="Menu principale">
+      <a href="prodotti.html">Prodotti</a>
+      <a class="nascondi" href="orari-e-contatti.html">Orari</a>
+      <a class="azione" href="orari-e-contatti.html#ordina">Ordina</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenuto">
+  <section class="apertura">
+    <div class="contenitore">
+      <div>
+        <p class="occhiello">Sforniamo alle 6:30</p>
+        <h1>Pane vero, <em>cotto</em> ogni mattina.</h1>
+        <p class="intro">Lievito madre, farine macinate a pietra e quarantotto ore di pazienza. Il resto lo fa il forno, prima che la città si svegli.</p>
+        <div class="azioni">
+          <a class="bottone" href="prodotti.html">Scopri il banco</a>
+          <a class="bottone chiaro" href="orari-e-contatti.html">Orari e indirizzo</a>
+        </div>
+      </div>
+      <figure>
+        <img src="img/hero-800.webp" srcset="img/hero-800.webp 800w, img/hero-1600.webp 1600w" sizes="(min-width: 56rem) 55vw, 100vw" width="1600" height="893" alt="Pagnotte a lievito madre e una teglia di focaccia appena sfornate su un bancone di legno" fetchpriority="high">
+      </figure>
+    </div>
+  </section>
+
+  <section class="fatti" aria-label="Il nostro metodo">
+    <div class="contenitore">
+      <ul>
+        <li><strong>48 ore</strong><span>di lievitazione lenta per ogni impasto</span></li>
+        <li><strong>3 farine</strong><span>di grani antichi, macinate a pietra</span></li>
+        <li><strong>0 additivi</strong><span>solo acqua, farina, sale e lievito madre</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sezione" aria-labelledby="banco">
+    <div class="contenitore">
+      <div class="titoletto">
+        <div>
+          <p class="occhiello">Dal forno</p>
+          <h2 id="banco">Il banco di <em>oggi</em></h2>
+        </div>
+        <a class="bottone chiaro" href="prodotti.html">Tutti i prodotti</a>
+      </div>
+      <div class="griglia">
+        <article class="scheda">
+          <img src="img/pane-480.webp" srcset="img/pane-480.webp 480w, img/pane-900.webp 900w" sizes="(min-width: 56rem) 30vw, 100vw" width="900" height="1118" loading="lazy" alt="Pagnotta di pane a lievito madre tagliata a metà, con la mollica alveolata">
+          <div>
+            <h3>Pagnotta di campagna</h3>
+            <p>Crosta scura e croccante, mollica umida che dura tre giorni.</p>
+            <span class="prezzo">€ 6,80 al kg</span>
+          </div>
+        </article>
+        <article class="scheda">
+          <img src="img/focaccia-480.webp" srcset="img/focaccia-480.webp 480w, img/focaccia-900.webp 900w" sizes="(min-width: 56rem) 30vw, 100vw" width="900" height="1118" loading="lazy" alt="Focaccia dorata in teglia con olio, sale grosso e rosmarino">
+          <div>
+            <h3>Focaccia all'olio</h3>
+            <p>Alta e soffice, con olio extravergine e sale grosso. Esce calda alle 11.</p>
+            <span class="prezzo">€ 2,50 al trancio</span>
+          </div>
+        </article>
+        <article class="scheda">
+          <img src="img/dolci-480.webp" srcset="img/dolci-480.webp 480w, img/dolci-900.webp 900w" sizes="(min-width: 56rem) 30vw, 100vw" width="900" height="1118" loading="lazy" alt="Cornetti sfogliati e maritozzi con la panna su un piatto di ceramica">
+          <div>
+            <h3>Colazione</h3>
+            <p>Cornetti sfogliati a mano e maritozzi con panna montata al momento.</p>
+            <span class="prezzo">da € 1,60</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione tinta storia" aria-labelledby="laboratorio">
+    <div class="contenitore">
+      <img src="img/mani-480.webp" srcset="img/mani-480.webp 480w, img/mani-900.webp 900w" sizes="(min-width: 56rem) 40vw, 100vw" width="900" height="1118" loading="lazy" alt="Mani infarinate che danno forma a una palla di impasto su un banco di legno">
+      <div>
+        <p class="occhiello">Il laboratorio</p>
+        <h2 id="laboratorio">Ogni pagnotta passa dalle <em>nostre mani</em>.</h2>
+        <p>Impastiamo la sera, lasciamo riposare la notte e formiamo a mano all'alba. Niente macchine che fanno le forme al posto nostro: per questo ogni pagnotta è un po' diversa dall'altra.</p>
+        <p>Il lievito madre lo rinfreschiamo tutti i giorni, domenica compresa. È l'unico collega che non va mai in ferie.</p>
+        <a class="bottone" href="orari-e-contatti.html#ordina">Prenota per domani</a>
+      </div>
+    </div>
+  </section>
 </main>
-<nav aria-label="Menu principale">
-  <a href="index.html" aria-current="page">Home</a>
-  <a href="prodotti.html">Prodotti</a>
-  <a href="orari-e-contatti.html">Orari e contatti</a>
-</nav>
+
+<footer class="piede">
+  <div class="contenitore">
+    <a class="marchio" href="index.html">Pietrafina<span>Forno a lievito madre</span></a>
+    <nav aria-label="Menu del piè di pagina">
+      <a href="index.html">Home</a>
+      <a href="prodotti.html">Prodotti</a>
+      <a href="orari-e-contatti.html">Orari e contatti</a>
+    </nav>
+    <p class="nota">Attività inventata per una prova di Goroz AI: nomi, prezzi e indirizzo non sono reali. Foto generate con l'intelligenza artificiale.</p>
+  </div>
+</footer>
 </body>
 </html>

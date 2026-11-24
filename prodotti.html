@@ -3,37 +3,104 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Forno di Prova - Prodotti</title>
+<title>Prodotti e prezzi · Forno Pietrafina</title>
+<meta name="description" content="Pane a lievito madre, focacce e colazione del Forno Pietrafina, con i prezzi. Attività inventata per una prova di Goroz AI.">
+<meta name="theme-color" content="#f7f2ea">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23211912'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='36' text-anchor='middle' fill='%23f7f2ea'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="stile.css">
 </head>
 <body>
-<header><p class="marchio">Forno di Prova</p></header>
-<main>
-  <h1>Prodotti</h1>
-  <p>Prezzi indicativi. <span class="segnaposto">[DA CONFERMARE: tutti i prezzi qui sotto e l'elenco dei prodotti]</span></p>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="index.html">Pietrafina<span>Forno a lievito madre</span></a>
+    <nav class="menu" aria-label="Menu principale">
+      <a href="prodotti.html" aria-current="page">Prodotti</a>
+      <a class="nascondi" href="orari-e-contatti.html">Orari</a>
+      <a class="azione" href="orari-e-contatti.html#ordina">Ordina</a>
+    </nav>
+  </div>
+</header>
 
-  <h2>Pane</h2>
-  <ul class="lista">
-    <li><span>Pane <span class="segnaposto">[NOME TIPO 1]</span></span><span class="segnaposto">€ [PREZZO] al kg</span></li>
-    <li><span>Pane <span class="segnaposto">[NOME TIPO 2]</span></span><span class="segnaposto">€ [PREZZO] al kg</span></li>
-  </ul>
+<main id="contenuto">
+  <section class="apertura">
+    <div class="contenitore">
+      <div>
+        <p class="occhiello">Il banco</p>
+        <h1>Prodotti e <em>prezzi</em></h1>
+        <p class="intro">Quello che trovi ogni giorno. I prodotti di stagione cambiano con il calendario: chiedi al banco cosa è appena uscito dal forno.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Focacce</h2>
-  <ul class="lista">
-    <li><span>Focaccia <span class="segnaposto">[NOME TIPO 1]</span></span><span class="segnaposto">€ [PREZZO]</span></li>
-    <li><span>Focaccia <span class="segnaposto">[NOME TIPO 2]</span></span><span class="segnaposto">€ [PREZZO]</span></li>
-  </ul>
+  <section class="sezione" style="padding-top:0" aria-label="Listino">
+    <div class="contenitore listino">
+      <div class="categoria">
+        <img src="img/pane-480.webp" srcset="img/pane-480.webp 480w, img/pane-900.webp 900w" sizes="(min-width: 56rem) 22rem, 100vw" width="900" height="1118" alt="Pagnotta a lievito madre tagliata, con la mollica alveolata">
+        <div>
+          <h2>Pane</h2>
+          <ul class="voci">
+            <li><b>Pagnotta di campagna</b><span class="prezzo">€ 6,80/kg</span><small>Tipo 1 e integrale, crosta scura, si conserva tre giorni.</small></li>
+            <li><b>Filone ai grani antichi</b><span class="prezzo">€ 7,90/kg</span><small>Senatore Cappelli e Gentil Rosso, profumo di nocciola.</small></li>
+            <li><b>Segale e noci</b><span class="prezzo">€ 8,50/kg</span><small>Denso e aromatico, perfetto con formaggi stagionati.</small></li>
+            <li><b>Baguette</b><span class="prezzo">€ 1,90</span><small>Sfornata due volte al giorno, alle 6:30 e alle 16:30.</small></li>
+          </ul>
+        </div>
+      </div>
 
-  <h2>Dolci</h2>
-  <ul class="lista">
-    <li><span>Dolce <span class="segnaposto">[NOME TIPO 1]</span></span><span class="segnaposto">€ [PREZZO]</span></li>
-    <li><span>Dolce <span class="segnaposto">[NOME TIPO 2]</span></span><span class="segnaposto">€ [PREZZO]</span></li>
-  </ul>
+      <div class="categoria">
+        <img src="img/focaccia-480.webp" srcset="img/focaccia-480.webp 480w, img/focaccia-900.webp 900w" sizes="(min-width: 56rem) 22rem, 100vw" width="900" height="1118" loading="lazy" alt="Focaccia in teglia con olio, sale grosso e rosmarino">
+        <div>
+          <h2>Focacce e pizze</h2>
+          <ul class="voci">
+            <li><b>Focaccia all'olio</b><span class="prezzo">€ 2,50</span><small>Il trancio classico, con olio extravergine e sale grosso.</small></li>
+            <li><b>Focaccia con cipolle</b><span class="prezzo">€ 2,80</span><small>Cipolla rossa stufata piano, finché diventa dolce.</small></li>
+            <li><b>Pizza rossa in teglia</b><span class="prezzo">€ 2,30</span><small>Pomodoro, origano e un filo d'olio. Esce alle 11 e alle 17.</small></li>
+            <li><b>Teglia intera su ordinazione</b><span class="prezzo">€ 22,00</span><small>Otto tranci, da prenotare il giorno prima.</small></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="categoria">
+        <img src="img/dolci-480.webp" srcset="img/dolci-480.webp 480w, img/dolci-900.webp 900w" sizes="(min-width: 56rem) 22rem, 100vw" width="900" height="1118" loading="lazy" alt="Cornetti sfogliati e maritozzi con la panna">
+        <div>
+          <h2>Colazione e dolci</h2>
+          <ul class="voci">
+            <li><b>Cornetto sfogliato</b><span class="prezzo">€ 1,60</span><small>Burro francese, sfogliatura a mano, tre giorni di lavorazione.</small></li>
+            <li><b>Maritozzo con la panna</b><span class="prezzo">€ 3,20</span><small>Panna montata al momento, solo fino a esaurimento.</small></li>
+            <li><b>Ciambellone della casa</b><span class="prezzo">€ 14,00</span><small>Al limone, intero. Le fette al banco a € 2,50.</small></li>
+            <li><b>Biscotti al burro</b><span class="prezzo">€ 24,00/kg</span><small>Frolla classica e al cacao, venduti a peso.</small></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione tinta" aria-labelledby="ordini">
+    <div class="contenitore titoletto" style="margin-bottom:0">
+      <div>
+        <p class="occhiello">Su ordinazione</p>
+        <h2 id="ordini">Ti teniamo da parte <em>il pane</em>.</h2>
+        <p class="intro">Ordina entro le 18 e lo trovi pronto la mattina dopo, con il tuo nome sul sacchetto.</p>
+      </div>
+      <a class="bottone" href="orari-e-contatti.html#ordina">Prenota per domani</a>
+    </div>
+  </section>
 </main>
-<nav aria-label="Menu principale">
-  <a href="index.html">Home</a>
-  <a href="prodotti.html" aria-current="page">Prodotti</a>
-  <a href="orari-e-contatti.html">Orari e contatti</a>
-</nav>
+
+<footer class="piede">
+  <div class="contenitore">
+    <a class="marchio" href="index.html">Pietrafina<span>Forno a lievito madre</span></a>
+    <nav aria-label="Menu del piè di pagina">
+      <a href="index.html">Home</a>
+      <a href="prodotti.html">Prodotti</a>
+      <a href="orari-e-contatti.html">Orari e contatti</a>
+    </nav>
+    <p class="nota">Attività inventata per una prova di Goroz AI: nomi, prezzi e indirizzo non sono reali. Foto generate con l'intelligenza artificiale.</p>
+  </div>
+</footer>
 </body>
 </html>
