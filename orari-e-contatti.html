@@ -3,69 +3,77 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Orari e contatti · Forno Pietrafina</title>
-<meta name="description" content="Orari di apertura, indirizzo e ordini del Forno Pietrafina. Attività inventata per una prova di Goroz AI.">
-<meta name="theme-color" content="#f7f2ea">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23211912'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='36' text-anchor='middle' fill='%23f7f2ea'%3EP%3C/text%3E%3C/svg%3E">
-<link rel="preload" as="font" type="font/woff2" href="font/fraunces.woff2" crossorigin>
+<title>Orari, indirizzo e ordini · Forno Pietrafina</title>
+<meta name="description" content="Orari di apertura, indirizzo e ordini per il giorno dopo del Forno Pietrafina. Attività inventata per una prova di Goroz AI.">
+<meta name="theme-color" content="#1e3a2b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231e3a2b'/%3E%3Ccircle cx='50' cy='50' r='34' fill='none' stroke='%23f2c14e' stroke-width='7'/%3E%3Ccircle cx='50' cy='50' r='7' fill='%23f2c14e'/%3E%3C/svg%3E">
+<link rel="preload" href="font/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="stile.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="macina" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="50" cy="50" r="45" stroke-width="6"/><circle cx="50" cy="50" r="8" stroke-width="5"/><path stroke-width="4.5" d="M65.0 50.0Q80.0 51.5 91.3 65.1M63.0 57.5Q75.2 66.3 78.3 83.7M57.5 63.0Q63.7 76.7 57.6 93.3M50.0 65.0Q48.5 80.0 34.9 91.3M42.5 63.0Q33.7 75.2 16.3 78.3M37.0 57.5Q23.3 63.7 6.7 57.6M35.0 50.0Q20.0 48.5 8.7 34.9M37.0 42.5Q24.8 33.7 21.7 16.3M42.5 37.0Q36.3 23.3 42.4 6.7M50.0 35.0Q51.5 20.0 65.1 8.7M57.5 37.0Q66.3 24.8 83.7 21.7M63.0 42.5Q76.7 36.3 93.3 42.4"/></g></symbol>
+</svg>
 <a class="salta" href="#contenuto">Vai al contenuto</a>
 <header class="testata">
   <div class="contenitore">
-    <a class="marchio" href="index.html">Pietrafina<span>Forno a lievito madre</span></a>
+    <a class="marchio" href="index.html" aria-label="Forno Pietrafina, home"><svg style="color:var(--grano)" aria-hidden="true"><use href="#macina"/></svg>Pietrafina</a>
     <nav class="menu" aria-label="Menu principale">
-      <a href="prodotti.html">Prodotti</a>
+      <a href="prodotti.html">Il banco</a>
       <a class="nascondi" href="orari-e-contatti.html" aria-current="page">Orari</a>
-      <a class="azione" href="#ordina">Ordina</a>
+      <a class="ordina" href="#ordina">Ordina</a>
     </nav>
   </div>
 </header>
 
 <main id="contenuto">
-  <section class="apertura">
+  <section class="pagina" aria-labelledby="titolo">
     <div class="contenitore">
-      <div>
-        <p class="occhiello">Vieni a trovarci</p>
-        <h1>Orari e <em>contatti</em></h1>
-        <p class="intro">Il profumo arriva fino all'angolo della strada: è difficile sbagliarsi.</p>
-      </div>
+      <p class="etichetta">Vieni a trovarci</p>
+      <h1 id="titolo">Orari e <em>indirizzo.</em></h1>
+      <p class="intro">Il profumo arriva fino all'angolo della strada: è difficile sbagliarsi.</p>
+    </div>
+    <div class="timbro" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="97" fill="#f2c14e" stroke="#1a1612" stroke-width="3"/><g class="giro"><path id="giro-orari" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0" fill="none"/><text font-family="Plex Mono, monospace" font-size="13" font-weight="500" fill="#1a1612"><textPath href="#giro-orari" textLength="448" lengthAdjust="spacing">PRIMA SFORNATA 6:30 · VIA DELLA FARINA 1 ·</textPath></text></g><svg x="66" y="66" width="68" height="68" style="color:#1a1612"><use href="#macina"/></svg></svg>
     </div>
   </section>
 
-  <section class="sezione visita" style="padding-top:0" aria-label="Orari e indirizzo">
+  <section class="visita" style="padding-top:0" aria-label="Orari, indirizzo e ordini">
     <div class="contenitore">
       <div>
-        <h2>Orari</h2>
+        <h2>Quando siamo <em>aperti</em></h2>
         <table class="orari">
           <caption class="salta">Orari di apertura settimanali</caption>
           <tr><th scope="row">Lunedì</th><td>7:00 – 13:30</td></tr>
-          <tr><th scope="row">Martedì – Venerdì</th><td>7:00 – 13:30 · 16:30 – 19:30</td></tr>
+          <tr><th scope="row">Martedì – Venerdì</th><td>7:00 – 13:30<br>16:30 – 19:30</td></tr>
           <tr><th scope="row">Sabato</th><td>7:00 – 19:30</td></tr>
           <tr class="chiuso"><th scope="row">Domenica</th><td>8:00 – 12:30</td></tr>
         </table>
+        <p class="etichetta">Dove siamo</p>
+        <address style="font-style:normal;font-size:1.25rem;line-height:1.4;margin-bottom:2.5rem"><b>Via della Farina 1</b><br>Città di Prova<br><small style="color:var(--tenue);font-size:.95rem">Indirizzo inventato per la prova.</small></address>
+        <div class="ordina-box" id="ordina">
+          <h2>Ordina <em>per domani.</em></h2>
+          <p>Scrivici entro le 18 cosa ti serve: lo trovi pronto dalle 7, con il tuo nome sul sacchetto.</p>
+          <a class="bottone" href="mailto:ordini@example.com?subject=Ordine%20per%20domani">ordini@example.com <span class="freccia" aria-hidden="true">→</span></a>
+        </div>
       </div>
-      <div class="riquadro" id="ordina">
-        <p class="occhiello">Dove siamo</p>
-        <h2>Via della Farina 1</h2>
-        <address>Città di Prova<br>Indirizzo inventato per la prova</address>
-        <h3>Ordina per domani</h3>
-        <p>Scrivici entro le 18 cosa ti serve: lo trovi pronto dalle 7, con il tuo nome sul sacchetto.</p>
-        <a class="bottone" href="mailto:ordini@example.com?subject=Ordine%20per%20domani">ordini@example.com</a>
-      </div>
+      <img src="img/bottega-480.webp" srcset="img/bottega-480.webp 480w, img/bottega-900.webp 900w" sizes="(min-width: 56rem) 45vw, 100vw" width="900" height="1129" fetchpriority="high" alt="Un cliente di spalle riceve al banco un sacchetto di carta con una baguette, davanti agli scaffali del pane">
     </div>
   </section>
 </main>
 
 <footer class="piede">
   <div class="contenitore">
-    <a class="marchio" href="index.html">Pietrafina<span>Forno a lievito madre</span></a>
-    <nav aria-label="Menu del piè di pagina">
-      <a href="index.html">Home</a>
-      <a href="prodotti.html">Prodotti</a>
-      <a href="orari-e-contatti.html">Orari e contatti</a>
-    </nav>
+    <div class="righe">
+      <p>Via della Farina 1<br>Città di Prova</p>
+      <nav aria-label="Menu del piè di pagina">
+        <a href="index.html">Home</a>
+        <a href="prodotti.html">Il banco</a>
+        <a href="orari-e-contatti.html">Orari e ordini</a>
+      </nav>
+      <p>Prima sfornata 6:30<br><a href="mailto:ordini@example.com">ordini@example.com</a></p>
+    </div>
+    <p class="parolona" aria-hidden="true">Pietrafina</p>
     <p class="nota">Attività inventata per una prova di Goroz AI: nomi, prezzi e indirizzo non sono reali. Foto generate con l'intelligenza artificiale.</p>
   </div>
 </footer>
