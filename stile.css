@@ -1,8 +1,9 @@
 /* Forno Pietrafina · identità "macinato a pietra"
    Sesto giro (24/11/2026): impaginazione larga al 90%, movimento allo scorrimento, transizioni tra pagine.
    Bricolage Grotesque, Instrument Serif, IBM Plex Mono: SIL Open Font License 1.1, ospitati nel sito (font/LICENZE.txt). */
-@font-face { font-family: "Bricolage"; src: url("font/bricolage.woff2") format("woff2"); font-weight: 400 800; font-stretch: 75% 100%; font-display: swap; }
-@font-face { font-family: "Instrument"; src: url("font/instrument-italic.woff2") format("woff2"); font-style: italic; font-weight: 400; font-display: swap; }
+/* Titoli: "block" (i due caratteri sono precaricati) per non far cambiare misura ai titoli enormi quando il carattere arriva */
+@font-face { font-family: "Bricolage"; src: url("font/bricolage.woff2") format("woff2"); font-weight: 400 800; font-stretch: 75% 100%; font-display: block; }
+@font-face { font-family: "Instrument"; src: url("font/instrument-italic.woff2") format("woff2"); font-style: italic; font-weight: 400; font-display: block; }
 @font-face { font-family: "Plex Mono"; src: url("font/plexmono-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "Plex Mono"; src: url("font/plexmono-500.woff2") format("woff2"); font-weight: 500; font-display: swap; }
 
